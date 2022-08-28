@@ -71,4 +71,4 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
-theme: slate
+theme: jekyll-theme-slate
