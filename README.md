@@ -6,3 +6,12 @@
 - The results are that the news is overly negative and that the news publishes much more often when bad things Occur compared to when good events happen. For example, when the Omicron wave was over and Covid cases were plummeting, the news was publishing 6x less articles compared to the week before when it was at its peak. Further, the average news sentiment during the decrease in Omicron cases was still more negative than positive. These findings have important implications for accurate news reporting, namely, that an overly negative news media will mislead readers and may cause an incerase in distrust toward news institutions. 
 
 
+### 2. Predicting Bike Path Changes While Controlling for Multiple Testing
+
+
+
+
+
+### 3. Classification in the face of Uneven Test/Training Set Distributions
+
+- A major problem in machine learning is when the test set comes from a different distribution than the training set. Even when carefully applying cross-validation to avoid overfitting, a test set that has a different distribution than the training set will lead to an overestimation in model accuracy. We propose a possible solution to this problem by using Conformal prediction and reweighting predictions with weights derived from PCA and KNN. Using unsupervised ML techniques, we can adjust the weights without actually looking at the test set data, thereby avoiding any data dependent decisions. Our approach is highly valueable in real world applications since many machine learning models in industry are completely under the assumption that the predictions they will make in production will resemble that of what they were origianlly trained on. Our method can be used to supplement this assumption by continuing to make the distributions equal. 
