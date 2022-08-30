@@ -10,9 +10,11 @@ The results are that the news is overly negative and that the news publishes muc
 
 ### 2. Predicting Bike Path Changes While Controlling for Multiple Testing
 
+A proof of concept attempt at correlating the residuals $r_i$ from OLS with time $t_i$ using a permutation test. With this correlation we can make inferences on which bike paths changed over the course of two years.
 
+The main advantage of this approach in comparison to a vanilla permutation test is that the OLS residuals hold constant the confounding factors that otherwise would need to be taken into account with a normal permutation test. For a sample size of 1 million+ data points, this is an intractable calculation. However, with the OLS residual approach, a regression can be fit for each bike route and the errors will get larger as bike duration times become larger or smaller throughout the time period under investigation. These errors take into account weather, membership type, time of day, day of the week and so on. Also, FDR control fits naturally with this framework as Benjamini-Hochberg can adjust the p-values from the permutation testing, thereby limiting the number of false discoveries to a level of $\alpha$.
 
-
+The dataset used comes from [Capital Ride Share](https://ride.capitalbikeshare.com/system-data) which includes millions of bike rides from 2010-2017.
 
 ### 3. Classification in the face of Uneven Test/Training Set Distributions
 
