@@ -8,7 +8,7 @@ The results are that the news is overly negative and that the news publishes muc
 - The model was than used to predict over 500,000 Covid-19 related articles on AWS Sagemaker.
 - Currently being used at the University of Chicago and Dartmouth College (Professor Bruce Sacerdote and his lab).
 
-### 2. Predicting Bike Path Changes While Controlling for Multiple Testing
+### [2. Predicting Bike Path Changes While Controlling for Multiple Testing](https://github.com/GabeNicholson/Predicting-Bikepath-Changes-With-FDR-Control)
 
 A proof of concept attempt at correlating the residuals $r_i$ from OLS with time $t_i$ using a permutation test. With this correlation we can make inferences on which bike paths changed over the course of two years.
 
@@ -16,6 +16,6 @@ The main advantage of this approach in comparison to a vanilla permutation test 
 
 The dataset used comes from [Capital Ride Share](https://ride.capitalbikeshare.com/system-data) which includes millions of bike rides from 2010-2017.
 
-### 3. Classification in the face of Uneven Test/Training Set Distributions
+### 3. [Classification in the face of Uneven Test/Training Set Distributions](https://github.com/GabeNicholson/Astronomical-Object-Detection)
 
 A major problem in machine learning is when the test set comes from a different distribution than the training set. Even when carefully applying cross-validation to avoid overfitting, a test set that has a different distribution than the training set will lead to an overestimation in model accuracy. We propose a possible solution to this problem by using Conformal prediction and reweighting predictions with weights derived from PCA and KNN. Using unsupervised ML techniques, we can adjust the weights without actually looking at the test set data, thereby avoiding any data dependent decisions. Our approach is highly valueable in real world applications since many machine learning models in industry are completely under the assumption that the predictions they will make in production will resemble that of what they were origianlly trained on. Our method can be used to supplement this assumption by continuing to make the distributions equal. 
