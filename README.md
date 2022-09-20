@@ -1,4 +1,4 @@
-### 1. Predicting Covid-19 News Sentiment with Fine-Tuned RoBERTa
+### 1. [Predicting Covid-19 News Sentiment with Fine-Tuned RoBERTa](https://github.com/GabeNicholson/covid-news)
 
 Is the news always negative? Anyone who watched the news in the last two years probably noticed that loom and gloom were always making top headlines, especially given the pandemics heavy toll. However, was the news always negative or did it become more positive when good things occured such as increases in vaccine uptake or decreases in Covid-19 cases? In this project (my UChicago thesis) I used a neural network to predict Covid-19 article sentiment on over 500,000 Covid-19 articles from April 2020 - April 2022. With this data, I then created a time series that compared the Covid-19 positive rate to the average news sentiment. 
 
